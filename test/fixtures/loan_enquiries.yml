@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  principal_amount: 1.5
+  rate_of_intrest: 1.5
+  months: 1
+
+two:
+  principal_amount: 1.5
+  rate_of_intrest: 1.5
+  months: 1
