@@ -2,8 +2,8 @@ class UserController < ApplicationController
 
 	# display all users along with their emi enquires
 	def show
-		@user_info = {}
-		users = User.all
+		@user_info = User.get_user_info
+		users = User.includes(:emi_enquiries).all
 		users.each do |user|
 			@user_info[user.id] = {}
 			@user_info[user.id][:email] = user.email
